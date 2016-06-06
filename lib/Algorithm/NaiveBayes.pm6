@@ -93,7 +93,7 @@ Algorithm::NaiveBayes is a Perl 6 Naive Bayes classifier implementation.
 
 =head3 OPTIONS
 
-=item C<<solver => solver => Algorithm::NaiveBayes::Multinomial|Algorithm::NaiveBayes::Bernoulli>> 
+=item C<<solver => Algorithm::NaiveBayes::Multinomial|Algorithm::NaiveBayes::Bernoulli>> 
 
 =head2 METHODS
 

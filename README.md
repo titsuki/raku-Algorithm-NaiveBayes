@@ -49,7 +49,7 @@ CONSTRUCTOR
 
 ### OPTIONS
 
-  * `solver => solver => Algorithm::NaiveBayes::Multinomial|Algorithm::NaiveBayes::Bernoulli` 
+  * `solver => Algorithm::NaiveBayes::Multinomial|Algorithm::NaiveBayes::Bernoulli` 
 
 METHODS
 -------
