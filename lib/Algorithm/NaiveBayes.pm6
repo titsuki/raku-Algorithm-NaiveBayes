@@ -103,7 +103,7 @@ Algorithm::NaiveBayes is a Perl 6 Naive Bayes classifier implementation.
        multi method add-document(Str @words, Str $label)
        multi method add-document(Str $text, Str $label)
        
-Adds a document used for training.
+Adds a document used for training. C<<%attributes>> is the key-value pair, where key is the word and value is the frequency of occurrence of the word in the document. C<<@words>> is the bag-of-words. The bag-of-words is represented as a multiset of words occurrence in the document. C<<$text>> is the plain text of the document. It will be splitted by whitespaces and processed as the bag-of-words internally.
 
 =head3 train
 

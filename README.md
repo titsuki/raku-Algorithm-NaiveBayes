@@ -60,7 +60,7 @@ METHODS
     multi method add-document(Str @words, Str $label)
     multi method add-document(Str $text, Str $label)
 
-Adds a document used for training.
+Adds a document used for training. `%attributes` is the key-value pair, where key is the word and value is the frequency of occurrence of the word in the document. `@words` is the bag-of-words. The bag-of-words is represented as a multiset of words occurrence in the document. `$text` is the plain text of the document. It will be splitted by whitespaces and processed as the bag-of-words internally.
 
 ### train
 
