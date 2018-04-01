@@ -50,9 +50,9 @@ use Algorithm::NaiveBayes;
     is $nb.word-given-class("Japan", "China"), 1/14, "P(Japan|China)";
     my @result = $nb.predict("Chinese Chinese Chinese Tokyo Japan");
     is @result[0].key, "China";
-    is @result[0].value, log(3/4 * (3/7) ** 3 * 1/14 * 1/14), "P(China|doc)";
+    is-approx @result[0].value, log(3/4 * (3/7) ** 3 * 1/14 * 1/14), "P(China|doc)";
     is @result[1].key, "Japan";
-    is @result[1].value, log(1/4 * (2/9) ** 3 * 2/9 * 2/9), "P(Japan|doc)";
+    is-approx @result[1].value, log(1/4 * (2/9) ** 3 * 2/9 * 2/9), "P(Japan|doc)";
 }
 
 {
@@ -71,10 +71,10 @@ use Algorithm::NaiveBayes;
     
     my @result = $nb.predict("Chinese Chinese Chinese Tokyo Japan");
     is @result[0].key, "Japan";
-    is @result[0].value, log(1/4 * 2/3 * 2/3 * 2/3 * (1 - 1/3) * (1 - 1/3) * (1 - 1/3)), "P(Japan|doc)";
+    is-approx @result[0].value, log(1/4 * 2/3 * 2/3 * 2/3 * (1 - 1/3) * (1 - 1/3) * (1 - 1/3)), "P(Japan|doc)";
 
     is @result[1].key, "China";
-    is @result[1].value, log(3/4 * 4/5 * 1/5 * 1/5 * (1 - 2/5) * (1 - 2/5) * (1 - 2/5)), "P(China|doc)";
+    is-approx @result[1].value, log(3/4 * 4/5 * 1/5 * 1/5 * (1 - 2/5) * (1 - 2/5) * (1 - 2/5)), "P(China|doc)";
 }
 
 done-testing;
