@@ -11,12 +11,12 @@ enum Solver <Bernoulli Multinomial>;
 
 submethod BUILD(Solver :$solver = Multinomial) {
     given $solver {
-	when Bernoulli {
-	    $!classifier = Algorithm::NaiveBayes::Classifier::Bernoulli.new;
-	}
-	when Multinomial {
-	    $!classifier = Algorithm::NaiveBayes::Classifier::Multinomial.new;
-	}
+        when Bernoulli {
+            $!classifier = Algorithm::NaiveBayes::Classifier::Bernoulli.new;
+        }
+        when Multinomial {
+            $!classifier = Algorithm::NaiveBayes::Classifier::Multinomial.new;
+        }
     }
 }
 

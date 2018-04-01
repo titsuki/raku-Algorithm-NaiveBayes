@@ -13,7 +13,7 @@ method word-given-class(Str, Str) { ... }
 method hash2array-pair(%hash) {
     my @res;
     for %hash.sort({ $^b.value cmp $^a.value }) -> (:$key, :$value) {
-	@res.push(Pair.new($key, $value));
+        @res.push(Pair.new($key, $value));
     }
     return @res;
 }

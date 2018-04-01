@@ -5,13 +5,13 @@ has %.attributes;
 
 multi submethod BUILD(Str :$text!) {
     for $text.split(" ") -> $word {
-	%!attributes{$word} += 1;
+        %!attributes{$word} += 1;
     }
 }
 
 multi submethod BUILD(Str :@words!) {
     for @words -> $word {
-	%!attributes{$word} += 1;
+        %!attributes{$word} += 1;
     }
 }
 
@@ -23,7 +23,7 @@ multi method add(Str $word, Int $freq) {
 
 multi method add(@words) {
     for @words -> $word {
-	%!attributes{$word} += 1;
+        %!attributes{$word} += 1;
     }
 }
 
