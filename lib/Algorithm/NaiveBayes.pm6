@@ -3,7 +3,7 @@ use v6;
 use Algorithm::NaiveBayes::Classifiable;
 use Algorithm::NaiveBayes::Classifier::Multinomial;
 use Algorithm::NaiveBayes::Classifier::Bernoulli;
-unit class Algorithm::NaiveBayes:ver<0.0.1>;
+unit class Algorithm::NaiveBayes:ver<0.0.2>;
 
 has Algorithm::NaiveBayes::Classifiable $!classifier;
 
