@@ -20,16 +20,8 @@ submethod BUILD(Solver :$solver = Multinomial) {
     }
 }
 
-method train() {
-    $!classifier.train();
-}
-
-multi method predict(%v) {
-    $!classifier.predict(%v);
-}
-
-multi method predict(Str $text) {
-    $!classifier.predict($text);
+method train(--> Algorithm::NaiveBayes::Model) {
+    $!classifier.train;
 }
 
 multi method add-document(%attributes, Str $label) {
@@ -42,10 +34,6 @@ multi method add-document(Str @words, Str $label) {
 
 multi method add-document(Str $text, Str $label) {
     $!classifier.add-document($text, $label);
-}
-
-method word-given-class(Str $word, Str $class) {
-    $!classifier.word-given-class($word, $class);
 }
 
 =begin pod
