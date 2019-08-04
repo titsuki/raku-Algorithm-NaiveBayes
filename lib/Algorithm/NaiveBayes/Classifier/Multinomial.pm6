@@ -1,4 +1,5 @@
 use v6;
+use Algorithm::NaiveBayes::Model;
 use Algorithm::NaiveBayes::Document;
 use Algorithm::NaiveBayes::Classifiable;
 use Algorithm::NaiveBayes::ModelUpdatable;
@@ -26,10 +27,11 @@ multi method add-document(Str $text, Str $label) {
     @!docs.push(Algorithm::NaiveBayes::Document.new(:$text, :$label));
 }
 
-method train() {
+method train(--> Algorithm::NaiveBayes::Model) {
     for @!docs -> $doc {
-	self.update-model($doc);
+	      self.update-model($doc);
     }
+    Algorithm::NaiveBayes::Model.new(:classifier(self));
 }
 
 multi method predict(%hdoc) {

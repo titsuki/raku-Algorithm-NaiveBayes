@@ -15,6 +15,7 @@
     "Algorithm::NaiveBayes::Classifier::Bernoulli" : "lib/Algorithm/NaiveBayes/Classifier/Bernoulli.pm6",
     "Algorithm::NaiveBayes::Classifier::Multinomial" : "lib/Algorithm/NaiveBayes/Classifier/Multinomial.pm6",
     "Algorithm::NaiveBayes::Document" : "lib/Algorithm/NaiveBayes/Document.pm6",
+    "Algorithm::NaiveBayes::Model" : "lib/Algorithm/NaiveBayes/Model.pm6",
     "Algorithm::NaiveBayes::ModelUpdatable" : "lib/Algorithm/NaiveBayes/ModelUpdatable.pm6",
     "Algorithm::NaiveBayes::Vocabulary" : "lib/Algorithm/NaiveBayes/Vocabulary.pm6"
   },
