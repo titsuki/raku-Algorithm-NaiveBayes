@@ -53,8 +53,8 @@ Algorithm::NaiveBayes - A Perl 6 Naive Bayes classifier implementation
   $nb.add-document("Chinese Chinese Shanghai", "China");
   $nb.add-document("Chinese Macao", "China");
   $nb.add-document("Tokyo Japan Chinese", "Japan");
-  $nb.train();
-  my @result = $nb.predict("Chinese Chinese Chinese Tokyo Japan");
+  my $model = $nb.train;
+  my @result = $model.predict("Chinese Chinese Chinese Tokyo Japan");
   @result.say; # [China => -8.10769031284391 Japan => -8.90668134500126]
 
 =head2 EXAMPLE2
@@ -66,8 +66,8 @@ Algorithm::NaiveBayes - A Perl 6 Naive Bayes classifier implementation
   $nb.add-document("Chinese Chinese Shanghai", "China");
   $nb.add-document("Chinese Macao", "China");
   $nb.add-document("Tokyo Japan Chinese", "Japan");
-  $nb.train();
-  my @result = $nb.predict("Chinese Chinese Chinese Tokyo Japan");
+  my $model = $nb.train;
+  my @result = $model.predict("Chinese Chinese Chinese Tokyo Japan");
   @result.say; # [Japan => -3.81908500976888 China => -5.26217831993216]
 
 =head1 DESCRIPTION
@@ -95,14 +95,9 @@ Adds a document used for training. C<<%attributes>> is the key-value pair, where
 
 =head3 train
 
-Starts the training.
+       method train(--> Algorithm::NaiveBayes::Model)
 
-=head3 predict
-
-       multi method predict(Str $text)
-       multi method predict(%attributes)
-
-Returns the log conditional a-posterior probabilities for each class. The resulting list is sorted by descending order of probability. You must call the train method before the prediction.
+Starts training and returns an Algorithm::NaiveBayes::Model instance.
 
 =head1 AUTHOR
 
