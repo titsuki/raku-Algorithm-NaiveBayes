@@ -2,6 +2,9 @@ Revision history for Algorithm-NaiveBayes
 
 {{$NEXT}}
 
+0.0.4  2019-08-04T14:13:39+09:00
+    - [BREKING API] Add Algorithm::NaiveBayes::Model
+      - This class enables to avoid calling predict before train.
 0.0.3  2018-04-01T13:04:08+09:00
     - Fix Changelog
 0.0.2  2018-04-01T12:58:06+09:00

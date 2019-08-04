@@ -1,5 +1,5 @@
 use v6;
-unit class Algorithm::NaiveBayes::Vocabulary:ver<0.0.3>;
+unit class Algorithm::NaiveBayes::Vocabulary:ver<0.0.4>;
 
 has %.attributes;
 
