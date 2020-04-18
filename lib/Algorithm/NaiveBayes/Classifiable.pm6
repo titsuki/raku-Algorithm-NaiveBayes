@@ -1,6 +1,6 @@
 use v6;
 
-unit role Algorithm::NaiveBayes::Classifiable:ver<0.0.4>;
+unit role Algorithm::NaiveBayes::Classifiable:ver<0.0.5>;
 
 method train() { ... }
 multi method predict(%hash) { ... }

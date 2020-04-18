@@ -2,6 +2,8 @@ Revision history for Algorithm-NaiveBayes
 
 {{$NEXT}}
 
+0.0.5  2020-04-18T21:25:34+09:00
+    - Replace Perl 6 with Raku [#7]
 0.0.4  2019-08-04T14:13:39+09:00
     - [BREKING API] Add Algorithm::NaiveBayes::Model
       - This class enables to avoid calling predict before train.

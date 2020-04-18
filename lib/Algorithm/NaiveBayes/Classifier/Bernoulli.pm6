@@ -4,7 +4,7 @@ use Algorithm::NaiveBayes::Document;
 use Algorithm::NaiveBayes::Classifiable;
 use Algorithm::NaiveBayes::ModelUpdatable;
 
-unit class Algorithm::NaiveBayes::Classifier::Bernoulli:ver<0.0.4>;
+unit class Algorithm::NaiveBayes::Classifier::Bernoulli:ver<0.0.5>;
 also does Algorithm::NaiveBayes::Classifiable;
 also does Algorithm::NaiveBayes::ModelUpdatable;
 

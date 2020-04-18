@@ -1,7 +1,7 @@
 use v6;
 
 use Algorithm::NaiveBayes::Classifiable;
-unit class Algorithm::NaiveBayes::Model:ver<0.0.4>;
+unit class Algorithm::NaiveBayes::Model:ver<0.0.5>;
 
 has Algorithm::NaiveBayes::Classifiable $!classifier;
 

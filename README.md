@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/titsuki/raku-Algorithm-NaiveBayes.svg?branch=master)](https://travis-ci.org/titsuki/p6-Algorithm-NaiveBayes)
+[![Build Status](https://travis-ci.org/titsuki/raku-Algorithm-NaiveBayes.svg?branch=master)](https://travis-ci.org/titsuki/raku-Algorithm-NaiveBayes)
 
 NAME
 ====
