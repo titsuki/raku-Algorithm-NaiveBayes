@@ -40,7 +40,7 @@ multi method add-document(Str $text, Str $label) {
 
 =head1 NAME
 
-Algorithm::NaiveBayes - A Perl 6 Naive Bayes classifier implementation
+Algorithm::NaiveBayes - A Raku Naive Bayes classifier implementation
 
 =head1 SYNOPSIS
 
@@ -72,7 +72,7 @@ Algorithm::NaiveBayes - A Perl 6 Naive Bayes classifier implementation
 
 =head1 DESCRIPTION
 
-Algorithm::NaiveBayes is a Perl 6 Naive Bayes classifier implementation.
+Algorithm::NaiveBayes is a Raku Naive Bayes classifier implementation.
 
 =head2 CONSTRUCTOR
 

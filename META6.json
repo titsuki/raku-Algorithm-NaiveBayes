@@ -5,7 +5,7 @@
   ],
   "build-depends" : [ ],
   "depends" : [ ],
-  "description" : "A Perl 6 Naive Bayes classifier implementation",
+  "description" : "A Raku Naive Bayes classifier implementation",
   "license" : "Artistic-2.0",
   "name" : "Algorithm::NaiveBayes",
   "perl" : "6.c",
@@ -20,7 +20,7 @@
     "Algorithm::NaiveBayes::Vocabulary" : "lib/Algorithm/NaiveBayes/Vocabulary.pm6"
   },
   "resources" : [ ],
-  "source-url" : "git://github.com/titsuki/p6-Algorithm-NaiveBayes.git",
+  "source-url" : "git://github.com/titsuki/raku-Algorithm-NaiveBayes.git",
   "tags" : [ ],
   "test-depends" : [ ],
   "version" : "0.0.4"

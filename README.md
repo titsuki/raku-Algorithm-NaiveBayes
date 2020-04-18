@@ -1,9 +1,9 @@
-[![Build Status](https://travis-ci.org/titsuki/p6-Algorithm-NaiveBayes.svg?branch=master)](https://travis-ci.org/titsuki/p6-Algorithm-NaiveBayes)
+[![Build Status](https://travis-ci.org/titsuki/raku-Algorithm-NaiveBayes.svg?branch=master)](https://travis-ci.org/titsuki/p6-Algorithm-NaiveBayes)
 
 NAME
 ====
 
-Algorithm::NaiveBayes - A Perl 6 Naive Bayes classifier implementation
+Algorithm::NaiveBayes - A Raku Naive Bayes classifier implementation
 
 SYNOPSIS
 ========
@@ -39,7 +39,7 @@ EXAMPLE2
 DESCRIPTION
 ===========
 
-Algorithm::NaiveBayes is a Perl 6 Naive Bayes classifier implementation.
+Algorithm::NaiveBayes is a Raku Naive Bayes classifier implementation.
 
 CONSTRUCTOR
 -----------
