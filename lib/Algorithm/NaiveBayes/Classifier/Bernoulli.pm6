@@ -51,12 +51,7 @@ multi method predict(%hdoc) {
 }
 
 multi method predict(Str $text) {
-    my @words = $text.split(" ");
-    my %v;
-    for @words -> $word {
-	%v{$word}++;
-    }
-    self.predict(%v);
+    self.predict($text.split(" ").Bag);
 }
 
 method update-model($doc) {
